@@ -23,12 +23,10 @@ In geophysical modeling, subsurface structures are often irregular and asymmetri
 
 The gravity anomaly at each station is calculated based on an adapted version of Luiz (1995) for vertical-faced prisms:
 
-$\begin{split}
- g_z (x)= 2 G\rho  \left\{ \dfrac{(x-x_q)}{2} \cdot \ln\left(\dfrac{z_2^2+(x-x_q)^2}{z_1^2+(x-x_q)^2}\right) \right.\\
- \left. + \dfrac{[(x-x_q)-t]}{2} \cdot \ln\left(\dfrac{z_1^2+[(x-x_q)-t]^2}{z_2^2+[(x-x_q)-t]^2}\right) \right.\\
- \left. - z_2 \left[ \arctan\left(\dfrac{(x-x_q)-t}{z_2}\right)-\arctan\left(\dfrac{x-x_q}{z_2}\right)\right] \right.\\
- \left. + z_1 \left[ \arctan\left(\dfrac{(x-x_q)-t}{z_1}\right)-\arctan\left(\dfrac{x-x_q}{z_1}\right)\right] \right\}.
-\end{split}$
+$$
+g_z(x) = 2 G\rho \left\{ \frac{(x - x_q)}{2} \ln\left(\frac{z_2^2 + (x - x_q)^2}{z_1^2 + (x - x_q)^2}\right) + \frac{(x - x_q - t)}{2} \ln\left(\frac{z_1^2 + (x - x_q - t)^2}{z_2^2 + (x - x_q - t)^2}\right) - z_2 \left[\arctan\left(\frac{x - x_q - t}{z_2}\right) - \arctan\left(\frac{x - x_q}{z_2}\right)\right] + z_1 \left[\arctan\left(\frac{x - x_q - t}{z_1}\right) - \arctan\left(\frac{x - x_q}{z_1}\right)\right] \right\}
+$$
+
 
 ## Mesh and Acquisition Layout
 
