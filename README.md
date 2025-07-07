@@ -31,3 +31,86 @@ The vertical gravity anomaly is computed using an adapted version of the formula
 
 The subsurface is discretized into a mesh of 20 rows (depth) by 10 columns (horizontal), totaling 200 prisms. Twenty gravimetric stations are positioned at the midpoints of each surface prism. The total gravity anomaly is the sum of the contributions from all prisms:
 
+```
+g_z200(x) = sum(g_i for i in range(1, 201))
+```
+
+![Mesh 20x10](Figures/Mesh_20x10.png)
+
+## Validation
+
+To validate the prismatic modeling approach, results were compared with analytical gravity responses for a sphere and a cylinder. A finer mesh (20×40 prisms) was used in these tests.
+
+**Validation parameters:**
+
+- Refined mesh: 40 columns × 20 rows = 800 prisms  
+- Radius: 0.2 km  
+- Density contrast: 200 kg/m³  
+- Cylinder half-length: 100 km (to approximate infinite length in *y*)
+
+**Analytical Equations Used:**
+
+- **Sphere:**
+
+```
+g_ze(x) = (4πGΔρr³z_c) / [3((x−x_c)²+z_c²)^(3/2)]
+```
+
+- **Cylinder:**
+
+```
+g_zc(x) = [2πGΔρr² / z_c(1 + ((x−x_c)² / z_c²))] × 1 / sqrt(1 + ((x−x_c)² + z_c²)/L²)
+```
+
+**Validation Results:**
+
+- Sphere approximation: **~40% RMS error**
+- Cylinder approximation: **~7% RMS error**
+
+The low error for the cylindrical case validates the use of vertical prisms to approximate elongated subsurface bodies.
+
+![Validation Plot](Figures/gravimetric_Validation.png)
+
+## Usage Instructions
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/annie-gabrielle/GRPRISM2D.git
+   cd GRPRISM2D
+   ```
+
+2. Open and run the notebook:
+   ```bash
+   jupyter notebook gravimetric_modeling.ipynb
+   ```
+
+3. Edit the `density_mesh` inside the notebook to define your custom subsurface configuration.
+
+4. Run the notebook to view the calculated gravity anomaly and 2D density model.
+
+## Dependencies
+
+- `numpy`
+- `matplotlib`
+- `ipywidgets` (for interactive input, optional)
+- `json` (built-in)
+
+You can install all required packages using:
+
+```bash
+pip install numpy matplotlib ipywidgets
+```
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+Developed by **Annie Gabrielle**  
+Pós-Graduação em Geofísica – Observatório Nacional, Brazil  
+GitHub: [annie-gabrielle](https://github.com/annie-gabrielle)
+
+---
+
+Feel free to open issues, contribute with suggestions, or fork the repository to build upon it!
