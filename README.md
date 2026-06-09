@@ -9,10 +9,9 @@ Traditional 2D gravimetric modeling commonly employs the Talwani method using ir
 
 To serve different pedagogical purposes, the tool is delivered both as a [standalone script with an interactive Graphical User Interface (GUI)](./GUI%20-%20Interface/), offering students a dynamic introduction with six pre-configured prism scenarios, and a set of other three distinct Jupyter Notebooks:
 
-
-* The **first notebook** demonstrates [synthetic scenarios](./Notebooks/Notebook1-Sensitivity/), such as contacts between iron formations and quartzites, to assess gravity curve sensitivities to structural variations.
-* The **second** focuses on [code validation](./Notebooks/Notebook2-Validation/) by refining the mesh with an increasing number of prisms.
-* The **third** provides a [real-world geological application](./Notebooks/Notebook3-Alagoas/) using gravity data from the Alagoas basin (Sub-AL-Basin).
+* The **first notebook** demonstrates [synthetic scenarios](./Notebooks/Notebook1-Sensitivity.ipynb), such as contacts between iron formations and quartzites, to assess gravity curve sensitivities to structural variations.
+* The **second** focuses on [code validation](./Notebooks/Notebook2-Validation.ipynb) by refining the mesh with an increasing number of prisms.
+* The **third** provides a [real-world geological application](./Notebooks/Notebook3-Alagoas.ipynb) using gravity data from the Alagoas basin (Sub-AL-Basin).
 
 Ultimately, these computational environments highlight how easily the core functions can be adapted to any required geological situation, providing an intuitive, efficient approach that helps students grasp how density contrasts and structural geometries influence gravity responses.
 
