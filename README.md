@@ -7,7 +7,7 @@
 
 Traditional 2D gravimetric modeling commonly employs the Talwani method using irregular polygons; however, our approach simplifies the mathematical formulation by approximating the subsurface with horizontal prisms of infinite extent along the strike direction, where each prism contributes independently to the calculated anomaly. The main objective of this article is to enhance teaching and learning in geophysics by introducing an accessible, simplified Python-based modeling software utilizing these prismatic units. 
 
-To serve different pedagogical purposes, the tool is delivered both as a [standalone script with an interactive Graphical User Interface (GUI)](./GUI - Interface/), offering students a dynamic introduction with six pre-configured prism scenarios, and a set of other three distinct Jupyter Notebooks:
+To serve different pedagogical purposes, the tool is delivered both as a [standalone script with an interactive Graphical User Interface (GUI)](GUI - Interface), offering students a dynamic introduction with six pre-configured prism scenarios, and a set of other three distinct Jupyter Notebooks:
 
 
 
