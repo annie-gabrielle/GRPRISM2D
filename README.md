@@ -11,7 +11,7 @@ To serve different pedagogical purposes, the tool is delivered both as a [standa
 
 * The **first notebook** demonstrates [synthetic scenarios](./Notebooks/Notebook1-Sensitivity.ipynb), such as contacts between iron formations and quartzites, to assess gravity curve sensitivities to structural variations.
 * The **second** focuses on [code validation](./Notebooks/Notebook2-Validation.ipynb) by refining the mesh with an increasing number of prisms.
-* The **third** provides a [real-world geological application](./Notebooks/Notebook3-Alagoas.ipynb) using gravity data from the Alagoas basin (Sub-AL-Basin).
+* The **third** provides a [real-world geological application](./GUI%20-%20Interface/GRPRISM2D-Resultados) using gravity data from the Alagoas basin (Sub-AL-Basin).
 
 Ultimately, these computational environments highlight how easily the core functions can be adapted to any required geological situation, providing an intuitive, efficient approach that helps students grasp how density contrasts and structural geometries influence gravity responses.
 
